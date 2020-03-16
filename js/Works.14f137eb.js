@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["Works"],{1822:function(n,t,e){"use strict";e.r(t);var s=function(){var n=this,t=n.$createElement;n._self._c;return n._m(0)},r=[function(){var n=this,t=n.$createElement,e=n._self._c||t;return e("div",{staticClass:"works container"},[e("h1",[n._v(" Nothing to show in works page")])])}],o=e("2877"),a={},c=Object(o["a"])(a,s,r,!1,null,null,null);t["default"]=c.exports}}]);
+//# sourceMappingURL=Works.14f137eb.js.map
