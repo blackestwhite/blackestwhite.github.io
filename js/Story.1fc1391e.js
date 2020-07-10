@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["Story"],{"095a":function(t,n,e){"use strict";e.r(n);var r=function(){var t=this,n=t.$createElement;t._self._c;return t._m(0)},o=[function(){var t=this,n=t.$createElement,e=t._self._c||n;return e("div",{staticClass:"story container"},[e("h1",[t._v(" Nothing to show in Story page ")])])}],s=e("2877"),a={},c=Object(s["a"])(a,r,o,!1,null,null,null);n["default"]=c.exports}}]);
-//# sourceMappingURL=Story.1fc1391e.js.map
