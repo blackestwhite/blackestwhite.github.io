@@ -21,6 +21,7 @@ pre, code {
     direction: ltr !important;
     text-align: left !important;
     border-radius: 0.315rem;
+    overflow-x: scroll;
 }
 
 pre {
