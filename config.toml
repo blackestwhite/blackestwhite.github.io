@@ -2,5 +2,6 @@ baseURL = 'https://blackestwhite.github.io/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'ez'
+publishDir = 'public'
 [markup.goldmark.renderer]
 hardWraps = true
