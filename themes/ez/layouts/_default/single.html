@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            {{ .Title }}
+            | بلاگ مهدی اکبری
+        </title>
+        <!-- resources.Get "style.css" will fetch the style.css file. 
+        It will not work if you mention the exact location like "./assets/style.css".-->
+        {{ $style := resources.Get "style.css" }}    
+        <link rel="stylesheet" href="{{ $style.Permalink }}"> 
+    </head>
+
+    <body class="container mx-auto rtl">
+        {{- partial "header.html" . -}}
+
+        <main>
+            <h1 class="my-8 text-xl font-bold border-r-4 border-slate-300 p-3">
+                {{ .Title }}
+            </h1>
+
+            {{ .Content }}
+        </main>
+
+        {{- partial "footer.html" . -}}
+    </body>
+</html>

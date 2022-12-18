@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            لیست نوشته ها | بلاگ مهدی اکبری
+        </title>
+        <!-- resources.Get "style.css" will fetch the style.css file. 
+        It will not work if you mention the exact location like "./assets/style.css".-->
+        {{ $style := resources.Get "style.css" }}    
+        <link rel="stylesheet" href="{{ $style.Permalink }}"> 
+    </head>
+    <body class="container mx-auto rtl">
+        {{- partial "header.html" . -}}
+
+        <main>
+            {{ range (where .Site.RegularPages "Type" "in" (slice "posts")).GroupByDate "2006" }}
+            <h2 class="font-bold mt-6 mb-2">{{ .Key }}</h2>
+
+            <ul>
+            {{ range .Pages }}
+            <li class="border-r-4 border-slate-300 p-2 hover:border-sky-500 mt-2">
+                <a class="" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
+                <span class="text-slate-500"> | </span>
+                <span class="inline-block text-sm text-slate-500">{{ .Date.Format (.Site.Params.dateFormat | default "Jan 2" ) }}</span>
+            </li>
+            {{- end -}}
+            </ul>
+
+            {{ end }}
+        </main>
+
+        {{- partial "footer.html" . -}}
+    </body>
+</html>
