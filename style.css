@@ -563,10 +563,6 @@ video {
   left: 0px;
 }
 
-.m-4 {
-  margin: 1rem;
-}
-
 .m-3 {
   margin: 0.75rem;
 }
@@ -624,10 +620,6 @@ video {
 
 .h-24 {
   height: 6rem;
-}
-
-.h-48 {
-  height: 12rem;
 }
 
 .w-full {
