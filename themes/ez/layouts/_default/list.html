@@ -14,7 +14,7 @@
     <body class="container mx-auto rtl">
         {{- partial "header.html" . -}}
 
-        <main>
+        <main class="p-1">
             {{ range (where .Site.RegularPages "Type" "in" (slice "posts")).GroupByDate "2006" }}
             <h2 class="font-bold mt-6 mb-2">{{ .Key }}</h2>
 

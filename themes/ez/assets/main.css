@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +9,7 @@
 }
 
 * {
-    font-family: 'Vazir-Code-Hack' !important;
+    font-family: 'Vazirmatn',sans-serif !important;
     letter-spacing: 0.03rem;
 }
 
@@ -18,10 +19,15 @@
 }
 
 pre, code {
+    font-family: 'Vazir-Code-Hack',monospace !important;
     direction: ltr !important;
     text-align: left !important;
     border-radius: 0.315rem;
     overflow-x: scroll;
+}
+
+footer a{
+    font-family: 'Vazir-Code-Hack',monospace !important;
 }
 
 pre {

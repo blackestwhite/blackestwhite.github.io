@@ -1,11 +1,12 @@
 {{ define "main" }}
-
-    <h2 class="my-4">نوشته های اخیر</h2>
-    
-    <ul>
-    {{ range ( where .Site.RegularPages "Type" "posts" | first 5 ) }}
-        <li><a href="{{ .Permalink }}" class="block p-2 border-r-4 border-slate-300 mt-2 hover:border-sky-500">{{ .Title }}</a></li>
-    {{end}}
-    </ul>
+    <main class="p-1">
+        <h2 class="my-4">نوشته های اخیر</h2>
+        
+        <ul>
+        {{ range ( where .Site.RegularPages "Type" "posts" | first 5 ) }}
+            <li><a href="{{ .Permalink }}" class="block p-2 border-r-4 border-slate-300 mt-2 hover:border-sky-500">{{ .Title }}</a></li>
+        {{end}}
+        </ul>
+    </main>
     
 {{ end }}
