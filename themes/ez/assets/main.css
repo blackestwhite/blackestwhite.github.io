@@ -8,18 +8,13 @@
     src: url("/fonts/Vazir-Code-Hack.ttf");
 }
 
-* {
-    font-family: 'Vazirmatn',sans-serif !important;
-    letter-spacing: 0.03rem;
-}
-
 .rtl {
     direction: rtl;
     text-align: right;
 }
 
 pre, code {
-    font-family: 'Vazir-Code-Hack',monospace !important;
+    font-family: 'Vazir-Code-Hack', monospace !important;
     direction: ltr !important;
     text-align: left !important;
     border-radius: 0.315rem;
@@ -45,4 +40,9 @@ code {
 
 li {
     margin-right: 1rem;
+}
+
+h1,h2,h3,h4,h5,h6,p,a {
+    font-family: 'Vazirmatn',sans-serif;
+    letter-spacing: 0.03rem;
 }
