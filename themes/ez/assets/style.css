@@ -727,7 +727,7 @@ pre, code {
   direction: ltr !important;
   text-align: left !important;
   border-radius: 0.315rem;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 footer a{
