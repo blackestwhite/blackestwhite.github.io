@@ -13,6 +13,11 @@
     text-align: right;
 }
 
+.ltr {
+    direction: ltr;
+    text-align: left;
+}
+
 pre, code {
     font-family: 'Vazir-Code-Hack', monospace !important;
     direction: ltr !important;
