@@ -21,7 +21,7 @@
             <ul>
             {{ range .Pages }}
             <li class="border-slate-300 p-2 hover:border-sky-500 mt-2 {{if eq site.Language.Lang "fa"}}border-r-4{{else}}border-l-4{{end}}">
-                <a class="" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
+                <a class="text-black" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
                 <span class="text-slate-500"> | </span>
                 <span class="inline-block text-sm text-slate-500">{{ .Date.Format (.Site.Params.dateFormat | default "Jan 2" ) }}</span>
             </li>

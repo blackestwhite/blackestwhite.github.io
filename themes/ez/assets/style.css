@@ -588,13 +588,12 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-8{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .mb-2{
   margin-bottom: 0.5rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
 }
 
 .ml-2{
@@ -615,10 +614,6 @@ video {
 
 .mt-6{
   margin-top: 1.5rem;
-}
-
-.mb-8{
-  margin-bottom: 2rem;
 }
 
 .mt-8{
@@ -736,6 +731,11 @@ video {
   color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 @font-face {
   font-family: 'Vazir-Code-Hack';
 
@@ -781,6 +781,11 @@ li {
 h1,h2,h3,h4,h5,h6,p,a {
   font-family: 'Vazirmatn',sans-serif;
   letter-spacing: 0.03rem;
+}
+
+a{
+  --tw-text-opacity: 1;
+  color: rgb(2 132 199 / var(--tw-text-opacity));
 }
 
 .hover\:border-sky-500:hover{

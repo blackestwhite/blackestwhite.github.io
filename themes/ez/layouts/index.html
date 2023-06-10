@@ -9,7 +9,7 @@
         <ul>
         {{ range ( where .Site.RegularPages "Type" "posts" | first 5 ) }}
             
-            <li><a href="{{ .Permalink }}" class="block p-2 border-r-4 border-slate-300 mt-2 hover:border-sky-500">{{ .Title }}</a></li>
+            <li><a href="{{ .Permalink }}" class="block p-2 border-r-4 border-slate-300 mt-2 hover:border-sky-500 text-black">{{ .Title }}</a></li>
         {{ end }}
         </ul>
         {{ else }}
@@ -20,7 +20,7 @@
         <ul>
         {{ range ( where .Site.RegularPages "Type" "posts" | first 5 ) }}
             
-            <li><a href="{{ .Permalink }}" class="block p-2 border-l-4 border-slate-300 mt-2 hover:border-sky-500">{{ .Title }}</a></li>
+            <li><a href="{{ .Permalink }}" class="block p-2 border-l-4 border-slate-300 mt-2 hover:border-sky-500 text-black">{{ .Title }}</a></li>
         {{ end }}
         </ul>
         {{ end }}
