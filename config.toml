@@ -1,7 +1,18 @@
 baseURL = 'https://blackestwhite.github.io/'
-languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'ez'
 publishDir = 'public'
+DefaultContentLanguage = "en"
 [markup.goldmark.renderer]
 hardWraps = true
+[languages]
+    [languages.en]
+        contentDir = "content/en"
+        languageName = "Enlgish"
+        [languages.en.params]
+            linkedin = "https://blackestwhite.github.io/en/"
+    [languages.fa]
+        contentDir = "content/fa"
+        languageName = "Persian"
+        [languages.fa.params]
+            linkedin = "https://blackestwhite.github.io/fa/"
