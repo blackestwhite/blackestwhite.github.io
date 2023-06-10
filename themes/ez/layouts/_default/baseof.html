@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
+    {{ $lang := .Site.Language.Lang }}
     {{- partial "head.html" . -}}
+    {{ if eq $lang "fa"}}
     <body class="container mx-auto rtl">
+    {{ else }}
+    <body class="container mx-auto">
+    {{ end }}
         {{- partial "header.html" . -}}
         <div id="content">
         {{- block "main" . }}{{- end }}

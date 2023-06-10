@@ -1,23 +1,28 @@
 {{ define "main" }}
+    {{ $lang := site.Language.Lang }}
     <main class="p-1">
-        <h2 class="my-4">نوشته های اخیر</h2>
+        {{ if eq $lang "fa" }}
+        <h2 class="my-4">
+            نوشته‌های اخیر
+        </h2>
+                
         <ul>
         {{ range ( where .Site.RegularPages "Type" "posts" | first 5 ) }}
+            
             <li><a href="{{ .Permalink }}" class="block p-2 border-r-4 border-slate-300 mt-2 hover:border-sky-500">{{ .Title }}</a></li>
-        {{end}}
+        {{ end }}
         </ul>
-
-        <div class="bg-gray-100 p-4 w-64 rounded-md mt-12 mr-1">
-            <p class="text-xs text-sky-600">
-                وضعیت
-            </p>
-            <p class="text-sm mt-4">
-                اگر توی کسب و کارتون به درگاه پرداخت اتریومی یا توکن‌های ERC20 نیاز دارید، به من ایمیل بزنید :)
-            </p>
-            <a href="mailto:mahdi@akbari.foundation" class="text-sky-600 ltr block mt-4 text-sm">
-                mahdi@akbari.foundation
-            </a>
-        </div>
+        {{ else }}
+        <h2 class="my-4">
+            Recent posts
+        </h2>
+                
+        <ul>
+        {{ range ( where .Site.RegularPages "Type" "posts" | first 5 ) }}
+            
+            <li><a href="{{ .Permalink }}" class="block p-2 border-l-4 border-slate-300 mt-2 hover:border-sky-500">{{ .Title }}</a></li>
+        {{ end }}
+        </ul>
+        {{ end }}
     </main>
-    
 {{ end }}

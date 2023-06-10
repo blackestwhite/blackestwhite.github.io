@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /*
-! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -33,6 +33,7 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
 */
 
 html {
@@ -49,6 +50,8 @@ html {
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
 }
 
 /*
@@ -435,6 +438,9 @@ video {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -482,6 +488,9 @@ video {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -557,21 +566,16 @@ video {
   bottom: 0px;
 }
 
-.right-0{
-  right: 0px;
-}
-
 .left-0{
   left: 0px;
 }
 
-.m-3{
-  margin: 0.75rem;
+.right-0{
+  right: 0px;
 }
 
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.m-3{
+  margin: 0.75rem;
 }
 
 .mx-auto{
@@ -579,17 +583,30 @@ video {
   margin-right: auto;
 }
 
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.mt-2{
-  margin-top: 0.5rem;
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 
-.mt-12{
-  margin-top: 3rem;
+.ml-2{
+  margin-left: 0.5rem;
+}
+
+.mr-2{
+  margin-right: 0.5rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
 }
 
 .mt-4{
@@ -600,16 +617,12 @@ video {
   margin-top: 1.5rem;
 }
 
-.mb-2{
-  margin-bottom: 0.5rem;
+.mb-8{
+  margin-bottom: 2rem;
 }
 
-.mr-2{
-  margin-right: 0.5rem;
-}
-
-.mr-1{
-  margin-right: 0.25rem;
+.mt-8{
+  margin-top: 2rem;
 }
 
 .block{
@@ -624,24 +637,20 @@ video {
   display: flex;
 }
 
-.h-36{
-  height: 9rem;
-}
-
 .h-24{
   height: 6rem;
 }
 
-.w-64{
-  width: 16rem;
-}
-
-.w-full{
-  width: 100%;
+.h-36{
+  height: 9rem;
 }
 
 .w-24{
   width: 6rem;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .flex-wrap{
@@ -656,12 +665,16 @@ video {
   justify-content: center;
 }
 
-.rounded-md{
-  border-radius: 0.375rem;
-}
-
 .rounded-full{
   border-radius: 9999px;
+}
+
+.border-b{
+  border-bottom-width: 1px;
+}
+
+.border-l-4{
+  border-left-width: 4px;
 }
 
 .border-r-4{
@@ -672,18 +685,9 @@ video {
   border-top-width: 1px;
 }
 
-.border-b{
-  border-bottom-width: 1px;
-}
-
 .border-slate-300{
   --tw-border-opacity: 1;
   border-color: rgb(203 213 225 / var(--tw-border-opacity));
-}
-
-.bg-gray-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -699,10 +703,6 @@ video {
   padding: 0.5rem;
 }
 
-.p-4{
-  padding: 1rem;
-}
-
 .p-3{
   padding: 0.75rem;
 }
@@ -710,11 +710,6 @@ video {
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 .text-sm{
@@ -731,19 +726,14 @@ video {
   font-weight: 700;
 }
 
-.text-sky-600{
+.text-sky-500{
   --tw-text-opacity: 1;
-  color: rgb(2 132 199 / var(--tw-text-opacity));
+  color: rgb(14 165 233 / var(--tw-text-opacity));
 }
 
 .text-slate-500{
   --tw-text-opacity: 1;
   color: rgb(100 116 139 / var(--tw-text-opacity));
-}
-
-.text-sky-500{
-  --tw-text-opacity: 1;
-  color: rgb(14 165 233 / var(--tw-text-opacity));
 }
 
 @font-face {
@@ -752,12 +742,12 @@ video {
   src: url("/fonts/Vazir-Code-Hack.ttf");
 }
 
-.rtl {
+.rtl, .fa {
   direction: rtl;
   text-align: right;
 }
 
-.ltr {
+.ltr, .en {
   direction: ltr;
   text-align: left;
 }

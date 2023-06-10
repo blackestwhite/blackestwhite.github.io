@@ -12,16 +12,15 @@
         <link rel="stylesheet" href="{{ $style.Permalink }}">
         <meta name="google-site-verification" content="CfxD9VHCwx4FDNI2vnUTd7GHbY_8uASYNw5Vi_9G3FU" />
     </head>
-    <body class="container mx-auto rtl">
+    <body class="container mx-auto {{ site.Language.Lang }}">
         {{- partial "header.html" . -}}
-
         <main class="p-1">
             {{ range (where .Site.RegularPages "Type" "in" (slice "posts")).GroupByDate "2006" }}
             <h2 class="font-bold mt-6 mb-2">{{ .Key }}</h2>
 
             <ul>
             {{ range .Pages }}
-            <li class="border-r-4 border-slate-300 p-2 hover:border-sky-500 mt-2">
+            <li class="border-slate-300 p-2 hover:border-sky-500 mt-2 {{if eq site.Language.Lang "fa"}}border-r-4{{else}}border-l-4{{end}}">
                 <a class="" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
                 <span class="text-slate-500"> | </span>
                 <span class="inline-block text-sm text-slate-500">{{ .Date.Format (.Site.Params.dateFormat | default "Jan 2" ) }}</span>

@@ -15,13 +15,16 @@
         <meta name="google-site-verification" content="CfxD9VHCwx4FDNI2vnUTd7GHbY_8uASYNw5Vi_9G3FU" />
     </head>
 
-    <body class="container mx-auto rtl">
+    <body class="container mx-auto {{ site.Language.Lang }}">
         {{- partial "header.html" . -}}
 
         <main class="p-2">
-            <h1 class="my-8 text-xl font-bold border-r-4 border-slate-300 p-3">
+            <h1 class="mt-8 mb-2 text-xl font-bold border-slate-300 p-3 {{if eq site.Language.Lang "fa"}}border-r-4{{ else }}border-l-4{{ end }}">
                 {{ .Title }}
             </h1>
+            <p class="mb-8">
+                <span class="inline-block text-sm text-slate-500">{{ .Date.Format ("2006-01-02" | default "Jan 2" ) }}</span>
+            </p>
 
             {{ .Content }}
         </main>

@@ -1,7 +1,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{ if eq site.Language.Lang "fa"}}
     <title>بلاگ مهدی اکبری | blackestwhite</title>
+    {{ else }}
+    <title>Mahdi Akbari's blog | blackestwhite</title>
+    {{ end }}
     <!-- resources.Get "style.css" will fetch the style.css file. 
     It will not work if you mention the exact location like "./assets/style.css".-->
     {{ $style := resources.Get "style.css" }}    

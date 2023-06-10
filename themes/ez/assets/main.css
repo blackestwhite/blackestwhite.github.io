@@ -8,15 +8,16 @@
     src: url("/fonts/Vazir-Code-Hack.ttf");
 }
 
-.rtl {
+.rtl, .fa {
     direction: rtl;
     text-align: right;
 }
 
-.ltr {
+.ltr, .en {
     direction: ltr;
     text-align: left;
 }
+
 
 pre, code {
     font-family: 'Vazir-Code-Hack', monospace !important;
