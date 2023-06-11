@@ -600,8 +600,16 @@ video {
   margin-left: 0.5rem;
 }
 
+.ml-4{
+  margin-left: 1rem;
+}
+
 .mr-2{
   margin-right: 0.5rem;
+}
+
+.mr-4{
+  margin-right: 1rem;
 }
 
 .mt-2{
@@ -618,22 +626,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mr-1{
-  margin-right: 0.25rem;
-}
-
-.ml-1{
-  margin-left: 0.25rem;
-}
-
-.ml-4{
-  margin-left: 1rem;
-}
-
-.mr-4{
-  margin-right: 1rem;
 }
 
 .block{
@@ -737,6 +729,11 @@ video {
   font-weight: 700;
 }
 
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-sky-500{
   --tw-text-opacity: 1;
   color: rgb(14 165 233 / var(--tw-text-opacity));
@@ -745,11 +742,6 @@ video {
 .text-slate-500{
   --tw-text-opacity: 1;
   color: rgb(100 116 139 / var(--tw-text-opacity));
-}
-
-.text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 @font-face {
@@ -785,9 +777,15 @@ pre {
 }
 
 code {
-  padding: 0.315rem;
   background-color: #272822;
   color: #f8f8f2;
+  padding: 0.318rem;
+}
+
+pre code {
+  background-color: #272822;
+  color: #f8f8f2;
+  padding: 0rem;
 }
 
 li {
@@ -802,6 +800,22 @@ h1,h2,h3,h4,h5,h6,p,a {
 a{
   --tw-text-opacity: 1;
   color: rgb(2 132 199 / var(--tw-text-opacity));
+}
+
+main h1{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+main h2{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+main h3{
+  font-weight: 700;
 }
 
 .hover\:border-sky-500:hover{
