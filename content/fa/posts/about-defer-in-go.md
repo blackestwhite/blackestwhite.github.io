@@ -12,7 +12,7 @@ date: 2023-06-11T21:18:06+03:30
 
 ```go
 func main() {
-    fmt.Println("Hey I'm defered.")
+    defer fmt.Println("Hey I'm defered.")
     fmt.Println("Hello World.")
 }
 ```
@@ -22,8 +22,8 @@ func main() {
 <br>
 
 ```console
-Hey I'm defered.
 Hello World.
+Hey I'm defered.
 ```
 \
 مشاهده کردید که اول سلام دنیا پرینت شد و بعد متن دیفر شده.
