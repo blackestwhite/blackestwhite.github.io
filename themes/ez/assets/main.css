@@ -36,12 +36,15 @@ pre {
 }
 
 code {
-    padding: 0.315rem;
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 0.318rem;
 }
 
-code {
+pre code {
     background-color: #272822;
-    color: #f8f8f2
+    color: #f8f8f2;
+    padding: 0rem;
 }
 
 li {
@@ -55,4 +58,16 @@ h1,h2,h3,h4,h5,h6,p,a {
 
 a {
     @apply text-sky-600;
+}
+
+main h1 {
+    @apply text-xl font-bold;
+}
+
+main h2 {
+    @apply text-lg font-bold;
+}
+
+main h3 {
+    @apply font-bold;
 }
