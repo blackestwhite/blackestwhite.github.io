@@ -3,6 +3,7 @@ title = 'My New Hugo Site'
 theme = 'ez'
 publishDir = 'public'
 DefaultContentLanguage = "en"
+enableemoji = true
 [markup.goldmark.renderer]
 hardWraps = true
 [languages]
