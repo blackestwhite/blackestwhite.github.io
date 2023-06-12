@@ -71,3 +71,7 @@ main h2 {
 main h3 {
     @apply font-bold;
 }
+
+blockquote {
+    @apply my-2 px-3 py-4 bg-slate-200
+}
