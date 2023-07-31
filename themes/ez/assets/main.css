@@ -75,3 +75,15 @@ main h3 {
 blockquote {
     @apply my-2 px-3 py-4 bg-slate-200
 }
+
+ul, ol {
+    @apply mx-5
+}
+
+ul {
+    @apply list-disc
+}
+
+ol {
+    @apply list-decimal
+}
