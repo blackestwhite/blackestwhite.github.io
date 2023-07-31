@@ -4,8 +4,11 @@ theme = 'ez'
 publishDir = 'public'
 DefaultContentLanguage = "en"
 enableemoji = true
-[markup.goldmark.renderer]
-hardWraps = true
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+        unsafe = true
+        hardWraps = true
 [languages]
     [languages.en]
         contentDir = "content/en"
