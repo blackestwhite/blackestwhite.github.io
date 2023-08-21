@@ -829,6 +829,19 @@ blockquote{
   padding-bottom: 1rem;
 }
 
+ul, ol{
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+ul{
+  list-style-type: disc;
+}
+
+ol{
+  list-style-type: decimal;
+}
+
 .hover\:border-sky-500:hover{
   --tw-border-opacity: 1;
   border-color: rgb(14 165 233 / var(--tw-border-opacity));
