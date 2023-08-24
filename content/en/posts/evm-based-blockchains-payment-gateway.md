@@ -1,7 +1,6 @@
 ---
 title: "EVM-Based Blockchains Payment Gateway"
 date: 2023-08-24T17:58:22+03:30
-draft: true
 ---
 
 In this post we are going to understand how a basic payment gateway in Ethereum Virtual Machine based blockchain would work.
