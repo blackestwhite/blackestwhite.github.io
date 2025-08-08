@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My New Hugo Site</title><link>https://blackestwhite.github.io/fa/</link><description>Recent content on My New Hugo Site</description><generator>Hugo</generator><language>fa</language><lastBuildDate>Sun, 11 Jun 2023 21:18:06 +0330</lastBuildDate><atom:link href="https://blackestwhite.github.io/fa/index.xml" rel="self" type="application/rss+xml"/><item><title>درباره defer در گو</title><link>https://blackestwhite.github.io/fa/posts/about-defer-in-go/</link><pubDate>Sun, 11 Jun 2023 21:18:06 +0330</pubDate><guid>https://blackestwhite.github.io/fa/posts/about-defer-in-go/</guid><description>&lt;p>قبل از هرچیز، بیایید ببینیم defer به طور خلاصه چی هست؟&lt;br>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My New Hugo Site</title><link>https://blackestwhite.github.io/fa/</link><description>Recent content on My New Hugo Site</description><generator>Hugo</generator><language>fa</language><lastBuildDate>Sat, 09 Aug 2025 00:57:29 +0330</lastBuildDate><atom:link href="https://blackestwhite.github.io/fa/index.xml" rel="self" type="application/rss+xml"/><item><title>در ستایش پرسیدن سوال خوب</title><link>https://blackestwhite.github.io/fa/posts/asking-good-questions/</link><pubDate>Sat, 09 Aug 2025 00:57:29 +0330</pubDate><guid>https://blackestwhite.github.io/fa/posts/asking-good-questions/</guid><description>&lt;p>پرسیدنِ سؤال خوب، هنرِ بازکردن درهای بسته‌ی دانایی است.&lt;br>
+سؤالی که خوب تراش‌خورده باشد، نه شبیه تیری در تاریکی، بلکه همانند چراغی است که راه را برای پاسخ‌دهنده روشن می‌کند.&lt;br>
+&lt;br/>&lt;br>
+سؤال خوب، وضوح دارد؛ مثل آبی زلال که عمقش پیداست.&lt;br>
+زمینه می‌دهد، تا شنونده بداند این پرسش از کدام مسیر آمده و قرار است به کجا برود.&lt;br>
+هدف دارد، و به جای پراکندگی، اندیشه را به نقطه‌ای مشخص هدایت می‌کند.&lt;br>
+&lt;br/>&lt;br>
+در ستایش پرسیدن باید گفت: گاه ارزشِ خود پرسش از پاسخ فراتر می‌رود. پرسشی که درست چیده شود، نیمی از راه رسیدن به پاسخ را طی کرده‌ایم؛ و گاهی، همان لحظه که پرسش را با دقت می‌سازیم، جرقه‌ی پاسخ در ذهن‌مان زده می‌شود.&lt;br>
+&lt;br/>&lt;br>
+پرسیدنِ سؤال خوب، گفت‌وگو را پربارتر، و ذهن‌ها را بیدارتر می‌کند؛ و هرچه این هنر را بهتر بلد باشیم، سفر ما در سرزمین دانش کوتاه‌تر و لذت‌بخش‌تر خواهد بود.&lt;/p></description></item><item><title>درباره defer در گو</title><link>https://blackestwhite.github.io/fa/posts/about-defer-in-go/</link><pubDate>Sun, 11 Jun 2023 21:18:06 +0330</pubDate><guid>https://blackestwhite.github.io/fa/posts/about-defer-in-go/</guid><description>&lt;p>قبل از هرچیز، بیایید ببینیم defer به طور خلاصه چی هست؟&lt;br>
 دیفر میاد زمان فراخوانی شدن عبارت جلوی خودش رو به قبل جایی که تابع دربرگیرندش چیزی برگردونه موکول میکنه.&lt;br>
 &lt;br>
 یعنی چی؟ این کد رو ببنید.&lt;br>
