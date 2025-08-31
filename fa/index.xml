@@ -1,124 +1,126 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My New Hugo Site</title><link>https://blackestwhite.github.io/fa/</link><description>Recent content on My New Hugo Site</description><generator>Hugo</generator><language>fa</language><lastBuildDate>Sat, 09 Aug 2025 00:57:29 +0330</lastBuildDate><atom:link href="https://blackestwhite.github.io/fa/index.xml" rel="self" type="application/rss+xml"/><item><title>در ستایش پرسیدن سوال خوب</title><link>https://blackestwhite.github.io/fa/posts/asking-good-questions/</link><pubDate>Sat, 09 Aug 2025 00:57:29 +0330</pubDate><guid>https://blackestwhite.github.io/fa/posts/asking-good-questions/</guid><description>&lt;p>پرسیدنِ سؤال خوب، هنرِ بازکردن درهای بسته‌ی دانایی است.&lt;br>
-سؤالی که خوب تراش‌خورده باشد، نه شبیه تیری در تاریکی، بلکه همانند چراغی است که راه را برای پاسخ‌دهنده روشن می‌کند.&lt;br>
-&lt;br/>&lt;br>
-سؤال خوب، وضوح دارد؛ مثل آبی زلال که عمقش پیداست.&lt;br>
-زمینه می‌دهد، تا شنونده بداند این پرسش از کدام مسیر آمده و قرار است به کجا برود.&lt;br>
-هدف دارد، و به جای پراکندگی، اندیشه را به نقطه‌ای مشخص هدایت می‌کند.&lt;br>
-&lt;br/>&lt;br>
-در ستایش پرسیدن باید گفت: گاه ارزشِ خود پرسش از پاسخ فراتر می‌رود. پرسشی که درست چیده شود، نیمی از راه رسیدن به پاسخ را طی کرده‌ایم؛ و گاهی، همان لحظه که پرسش را با دقت می‌سازیم، جرقه‌ی پاسخ در ذهن‌مان زده می‌شود.&lt;br>
-&lt;br/>&lt;br>
-پرسیدنِ سؤال خوب، گفت‌وگو را پربارتر، و ذهن‌ها را بیدارتر می‌کند؛ و هرچه این هنر را بهتر بلد باشیم، سفر ما در سرزمین دانش کوتاه‌تر و لذت‌بخش‌تر خواهد بود.&lt;/p></description></item><item><title>درباره defer در گو</title><link>https://blackestwhite.github.io/fa/posts/about-defer-in-go/</link><pubDate>Sun, 11 Jun 2023 21:18:06 +0330</pubDate><guid>https://blackestwhite.github.io/fa/posts/about-defer-in-go/</guid><description>&lt;p>قبل از هرچیز، بیایید ببینیم defer به طور خلاصه چی هست؟&lt;br>
-دیفر میاد زمان فراخوانی شدن عبارت جلوی خودش رو به قبل جایی که تابع دربرگیرندش چیزی برگردونه موکول میکنه.&lt;br>
-&lt;br>
-یعنی چی؟ این کد رو ببنید.&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">func&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">defer&lt;/span> &lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Println&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;Hey I&amp;#39;m defered.&amp;#34;&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Println&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;Hello World.&amp;#34;&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;br>
-ما اگر اینو اجرا کنیم، خروجی زیر رو میده:&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-console" data-lang="console">&lt;span style="display:flex;">&lt;span>Hello World.
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Hey I&amp;#39;m defered.
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;br>
-مشاهده کردید که اول سلام دنیا پرینت شد و بعد متن دیفر شده.&lt;br>
-&lt;br>&lt;br>
-خب حالا که کاربرد خیلی ساده و نحوه کارکردش رو دیدید. یه سری نکات هست که باید بدونیم.&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;/p></description></item><item><title>محیط توسعه و دیپلوی من برای ربات تلگرام با گو</title><link>https://blackestwhite.github.io/fa/posts/go-telegram-bot/</link><pubDate>Wed, 01 Feb 2023 09:08:38 +0330</pubDate><guid>https://blackestwhite.github.io/fa/posts/go-telegram-bot/</guid><description>&lt;p>اول فوریه هستش من قصد داشتم از سال میلادی جدید (۲۰۲۳) بیشتر بنویسم ولی همین اولش خورد تو ذوقم سر بی نظمی هام و عدم درس خوندن در طول ترم و خواب و برنامه و زندگیم همه بهم ریخت ولی خب جون سالم به در بردم.&lt;br>
-&lt;br>&lt;br>
-خب قبل از هرچیزی بگم استک من:&lt;/p>
-&lt;p>۱- git&lt;br>
-۲- github&lt;br>
-۳- bash&lt;br>
-۴- Go (Golang)&lt;br>
-۵- MongoDB&lt;br>
-۶- Docker (با docker compose)&lt;br>
-۷- Redis (اگر ریت لیمیت و کش نیاز بود)&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;br>
-برای ربات از پکیج &lt;code>https://github.com/tucnak/telebot&lt;/code> استفاده می‌کنم.&lt;br>
-نمونه ساده استفاده‌ش:&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;/p></description></item><item><title>برنامه نویس احمق یا فروشنده نابغه</title><link>https://blackestwhite.github.io/fa/posts/dumb-programmer-or-genius-salesman/</link><pubDate>Fri, 13 Jan 2023 20:12:59 +0330</pubDate><guid>https://blackestwhite.github.io/fa/posts/dumb-programmer-or-genius-salesman/</guid><description>&lt;p>اخیرا دارم سعی میکنم مهارت های کار تیمی، مدیریت و رهبری رو یاد بگیرم. لاجرم درگیر نکاتی از فروش شدم.&lt;br>
-&lt;br>
-یکی از نکاتی که بهش رسیدم این بود که گاها افراد برای پروموت کرد چیزی که میخوان بفروشن یه جور درگیری ساختگی ایجاد میکنن.&lt;/p>
-&lt;p>برای مثال من بیام بگم ۲ + ۲ = ۵ و این یه چیز قراردادیه حالا پنج نفر بیان بریزن توی پیج اینستای من کلی کامنت بزارن. من به هدف توجه گرفتن رسیدم حالا توی این مدتی کافیه یه چیزی رو پروموت کنم و ایمپرشن اون چیز رو بالا ببرم کما اینکه اگر چیزی دارم میفروشم ممکنه اون همه توجه موجب فروش من بشه.&lt;br>
-&lt;br>
-تمام این ها رو گفتم تا به یه قضیه ای اشاره کنم.&lt;br>
-&lt;br>
-آقای م.م که اسم کاملشو نمیبرم که پروموت نکنمش خودم، چند وقت پیش یه سری حرفای پرت و پلا میگفت و موجب شده بود ما برنامه نویسا اسمشو ببریم و بگیم که مثلا پکیج فروش کلاه برداره. ولی دقیقا وقتی ما اسمشو میبردیم به طور ناخوداگاه داشتیم باعث میشدیم که طرف بیشتر بولد شه. مخصوصا اینکه ایشون توی اینستا فعالیت میکرد و اگر من نوعی میرفتم اونجا کامنتی میذاشتم فرضا با روش هایی که اینستا برای رکامندیشن استفاده میکنه میومد و پیج ایشون رو به افرادی که دنبال کد زدن و برنامه نویسی هستن، رکامند میکرد.&lt;br>
-&lt;br>
-حالا اسم بردن هم که دیگه هیچی وقتی اسم طرفو میبردیم، دو نفری که نمیدونستن ایشون کیه، میرفتن اسمشو سرچ میکردن.&lt;br>
-&lt;br>
-ایشون یه سری سوتی هایی میداد که الان فکر میکنم نمیدونم از قصد بوده که ایمپرشن بگیره و به هدف فروش برسه یا واقعا نمیدونسته. حالا چیزی که مشخصه اینه که طرف به هدف «فروش» رسیده خودآگاه یا ناخودآگاه.&lt;/p></description></item><item><title>استفاده از v2ray در لینوکس - کلاینت v2ray</title><link>https://blackestwhite.github.io/fa/posts/use-v2ray-under-linux/</link><pubDate>Sat, 17 Dec 2022 01:47:03 +0330</pubDate><guid>https://blackestwhite.github.io/fa/posts/use-v2ray-under-linux/</guid><description>&lt;p>از حدود دو ماه پیش که با کلاینتای مختلف &lt;code>v2ray&lt;/code> سر و کله میزدم. بنظرم زیاد جالب نبودن تصمیم گرفتم کلا به صورت خام از خود core و دستی نوشتن کانفیگا ازش استفاده کنم.&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;/p>
-&lt;h2 id="install-v2ray">نصب v2ray&lt;/h2>
-&lt;p>از لینک زیر v2ray-core رو دانلود کنید&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>https://github.com/v2ray/v2ray-core/releases/
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;br>
-&lt;br>&lt;br>
-از حالت زیپ خارج کنیدش&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>unzip v2ray-linux-64.zip -d v2ray-linux-64
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;br>
-&lt;br>&lt;br>
-بعد از خارج کردن از حالت زیپ فایل های مربوطه رو به صورت زیر با دستور &lt;code>mv&lt;/code> جابجا کنید&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;/p></description></item><item><title>رد کردن اینترنت ملی بوسیله ssh</title><link>https://blackestwhite.github.io/fa/posts/bypass-iri-firewall-ssh/</link><pubDate>Fri, 07 Oct 2022 08:16:29 +0330</pubDate><guid>https://blackestwhite.github.io/fa/posts/bypass-iri-firewall-ssh/</guid><description>&lt;p>به دلیل مسدود بودن اینترنت در ایران، در صورت عدم دسترسی به اینترنت آزاد باید 2 عدد وی پی اس برای پرش از دستگاه با IP ایرانی به هر دستگاه دیگری که IP خارجی دارد (بهتر است اروپایی باشد) آماده کنید.&lt;br>
-&lt;br>
-این قطعه یک پروکسی Socks5 را در شبکه محلی شما باز می کند:&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ssh -C -N -J user@iran user@foreign -D 0.0.0.0:port
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;br>
-کلاینت برای اتصال در تلفن های همراه:&lt;/p></description></item><item><title>تب و تاب ارز رمزنگاری شده - کریپتوکرنسی</title><link>https://blackestwhite.github.io/fa/posts/crypto-hype/</link><pubDate>Wed, 01 Dec 2021 16:06:46 +0330</pubDate><guid>https://blackestwhite.github.io/fa/posts/crypto-hype/</guid><description>&lt;p>سلام خدمت همه خواننده های این پست&lt;br>
-&lt;br>&lt;br>
-قصد دارم توی این نوشته از اتفاقایی که داره میوفته و میبینم(از دید یک توسعه دهنده) بگم تا افراد سودجو شما رو اسیر دست خودشون نکنن&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;br>
-&lt;img src="https://files.virgool.io/upload/users/2086/posts/zwbwq8b5fgje/lprnbfqhpusu.jpeg" alt="Alt Text" title="title">&lt;br>
-چارلز پانزی - مطرح کننده طرح پانزی یا همون هرمی&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;br>
-پدر من مدیر مدرسه هستش، هفته پیش به دعوت دوستانش به جلسه‌ای دعوت شد که گویا یک توکن/کوین رو معرفی می‌کردند و قول سود n درصدی می‌دادند به خریداران&lt;br>
-&lt;br>&lt;br>
-خب اولا هروقت به شما قول سود دادند کمی بیشتر تامل کنید، به گفته دوست پدرم این فرد میگفت فلان کوین رو بخرید، مبلغ سرمایه گذاری اولیه مورد نیاز 100 میلیون تومان هستش، و والت شما نزد ما باشه.. و قول دادند که ماهی 10 درصد سود بدن&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;br>
-اولا بهتره ما به دلیل بوجود اومدن سیستم بلاکچین در زمینه ارز و دارایی یک نگاهی بیاندازیم که یکی از اهداف اصلی این بود که شخص من یا شما، مالک واقعی دارایی خودمون باشیم ( توی حساب بانکی مالک ما هستیم ولی حساب نزد بانک هستش، به عبارت دیگه حساب و دارایی امانی هست)&lt;br>
-&lt;br>&lt;br>
-دوما کوین-توکنی که بخواهد مشکل واقعی حل کنه، وعده پولدار کردن شمارو نمیده&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;br>
-من به این مدل ایراد گرفتم، سپس همکار پدرم مدعی شد این تیم دوماه بهشون سود دادن اما من بهشون گفتم که ممکنه این افراد معامله کرده باشن و از پول شما سود کرده باشند ولی حالت اصلی اینه که این افراد از پول اصلی شما مبلغی به اندازه سود دوماه به خودتان برگردوندن(یعنی پول خودشو به خودش دادن)&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;br>
-ایراد به مدل این هستش که توی یک سیستم بسته یک عده سود میکنند و یک عده ضرر، یعنی سرمایه از بیرون وارد نمیشه و فقط کسایی که دعوت به خرید شدند حجم و سرمایه وارد میکنن و بر اساس عرضه و تقاضا وقتی عرضه ثابته و تقاضا بالا به تبع قیمت اون دارایی بالا میره، اما نکته مهم اینه که همه شما منتظرید توی قیمت n بفروشید اونوقت چی؟ متقاضی قیمت بالای n کجاست؟&lt;br>
-&lt;br>&lt;br>
-در ضمن وقتی شما والت رو پیش اون افراد دارید یعنی اختیار تام با اوناست و این خوب نیست!&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;br>
-اما این تنها دلیل نبود که من این مطلب رو نوشتم چون توی گروه دانشگاه هم مثل اینکه یک فرد به نام ع.ح با فالوور 1.7 میل در اینستاگرام یک کوین/توکنی رو معرفی کرد و قول 1-10 دلار شدنش رو به مردم داد و مشوق من شد که این پست رو بنویسم&lt;br>
-&lt;br>&lt;br>
-من رفتم سایت اون پروژه رو چک کردم دیدم از یک قالب اماده استفاده شده،&lt;br>
-&lt;br>&lt;br>
-هیچ وایت پیپری ارائه داده نشده (وایت پیپر یک خلاصه ای بر دلیل ایجاد پروژه و مشکلاتی که حل میکنه هستش، به علاوه مختصری از استاندارد هایی که ایجاد کرده یا استفاده میکنه)&lt;br>
-&lt;br>&lt;br>
-هیج لینکی توی گیتهاب داده نشده&lt;br>
-&lt;br>&lt;br>
-خلاصه بگم مثل یک سیاهچاله اونورش ناپیدا و حالا یک فرد اومده و اینو تبلیغ میکنه..&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;br>
-&lt;br>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My New Hugo Site</title><link>https://blackestwhite.github.io/fa/</link><description>Recent content on My New Hugo Site</description><generator>Hugo</generator><language>fa</language><lastBuildDate>Sun, 31 Aug 2025 15:12:32 +0330</lastBuildDate><atom:link href="https://blackestwhite.github.io/fa/index.xml" rel="self" type="application/rss+xml"/><item><title>ابزارهای مالی و اقتصادی</title><link>https://blackestwhite.github.io/fa/posts/financial-tools/</link><pubDate>Sun, 31 Aug 2025 15:12:32 +0330</pubDate><guid>https://blackestwhite.github.io/fa/posts/financial-tools/</guid><description>&lt;p&gt;یه سری ابزار کمکی ساده برای طلا و نقره داخلی و دلار نوشتم و پوش کردم که بشه نسبی فهمید چی ارزونه و خرید/فروش کدوم منطقی تره&lt;br&gt;
+&lt;br/&gt;&lt;br&gt;
+&lt;a href="https://blackestwhite.github.io/geram-silver"&gt;blackestwhite.github.io/geram-silver&lt;/a&gt;&lt;/p&gt;</description></item><item><title>در ستایش پرسیدن سوال خوب</title><link>https://blackestwhite.github.io/fa/posts/asking-good-questions/</link><pubDate>Sat, 09 Aug 2025 00:57:29 +0330</pubDate><guid>https://blackestwhite.github.io/fa/posts/asking-good-questions/</guid><description>&lt;p&gt;پرسیدنِ سؤال خوب، هنرِ بازکردن درهای بسته‌ی دانایی است.&lt;br&gt;
+سؤالی که خوب تراش‌خورده باشد، نه شبیه تیری در تاریکی، بلکه همانند چراغی است که راه را برای پاسخ‌دهنده روشن می‌کند.&lt;br&gt;
+&lt;br/&gt;&lt;br&gt;
+سؤال خوب، وضوح دارد؛ مثل آبی زلال که عمقش پیداست.&lt;br&gt;
+زمینه می‌دهد، تا شنونده بداند این پرسش از کدام مسیر آمده و قرار است به کجا برود.&lt;br&gt;
+هدف دارد، و به جای پراکندگی، اندیشه را به نقطه‌ای مشخص هدایت می‌کند.&lt;br&gt;
+&lt;br/&gt;&lt;br&gt;
+در ستایش پرسیدن باید گفت: گاه ارزشِ خود پرسش از پاسخ فراتر می‌رود. پرسشی که درست چیده شود، نیمی از راه رسیدن به پاسخ را طی کرده‌ایم؛ و گاهی، همان لحظه که پرسش را با دقت می‌سازیم، جرقه‌ی پاسخ در ذهن‌مان زده می‌شود.&lt;br&gt;
+&lt;br/&gt;&lt;br&gt;
+پرسیدنِ سؤال خوب، گفت‌وگو را پربارتر، و ذهن‌ها را بیدارتر می‌کند؛ و هرچه این هنر را بهتر بلد باشیم، سفر ما در سرزمین دانش کوتاه‌تر و لذت‌بخش‌تر خواهد بود.&lt;/p&gt;</description></item><item><title>درباره defer در گو</title><link>https://blackestwhite.github.io/fa/posts/about-defer-in-go/</link><pubDate>Sun, 11 Jun 2023 21:18:06 +0330</pubDate><guid>https://blackestwhite.github.io/fa/posts/about-defer-in-go/</guid><description>&lt;p&gt;قبل از هرچیز، بیایید ببینیم defer به طور خلاصه چی هست؟&lt;br&gt;
+دیفر میاد زمان فراخوانی شدن عبارت جلوی خودش رو به قبل جایی که تابع دربرگیرندش چیزی برگردونه موکول میکنه.&lt;br&gt;
+&lt;br&gt;
+یعنی چی؟ این کد رو ببنید.&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;func&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;defer&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;fmt&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;Println&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;Hey I&amp;#39;m defered.&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;fmt&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;Println&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;Hello World.&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;br&gt;
+ما اگر اینو اجرا کنیم، خروجی زیر رو میده:&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-console" data-lang="console"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Hello World.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Hey I&amp;#39;m defered.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;br&gt;
+مشاهده کردید که اول سلام دنیا پرینت شد و بعد متن دیفر شده.&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+خب حالا که کاربرد خیلی ساده و نحوه کارکردش رو دیدید. یه سری نکات هست که باید بدونیم.&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;</description></item><item><title>محیط توسعه و دیپلوی من برای ربات تلگرام با گو</title><link>https://blackestwhite.github.io/fa/posts/go-telegram-bot/</link><pubDate>Wed, 01 Feb 2023 09:08:38 +0330</pubDate><guid>https://blackestwhite.github.io/fa/posts/go-telegram-bot/</guid><description>&lt;p&gt;اول فوریه هستش من قصد داشتم از سال میلادی جدید (۲۰۲۳) بیشتر بنویسم ولی همین اولش خورد تو ذوقم سر بی نظمی هام و عدم درس خوندن در طول ترم و خواب و برنامه و زندگیم همه بهم ریخت ولی خب جون سالم به در بردم.&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+خب قبل از هرچیزی بگم استک من:&lt;/p&gt;
+&lt;p&gt;۱- git&lt;br&gt;
+۲- github&lt;br&gt;
+۳- bash&lt;br&gt;
+۴- Go (Golang)&lt;br&gt;
+۵- MongoDB&lt;br&gt;
+۶- Docker (با docker compose)&lt;br&gt;
+۷- Redis (اگر ریت لیمیت و کش نیاز بود)&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+برای ربات از پکیج &lt;code&gt;https://github.com/tucnak/telebot&lt;/code&gt; استفاده می‌کنم.&lt;br&gt;
+نمونه ساده استفاده‌ش:&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;</description></item><item><title>برنامه نویس احمق یا فروشنده نابغه</title><link>https://blackestwhite.github.io/fa/posts/dumb-programmer-or-genius-salesman/</link><pubDate>Fri, 13 Jan 2023 20:12:59 +0330</pubDate><guid>https://blackestwhite.github.io/fa/posts/dumb-programmer-or-genius-salesman/</guid><description>&lt;p&gt;اخیرا دارم سعی میکنم مهارت های کار تیمی، مدیریت و رهبری رو یاد بگیرم. لاجرم درگیر نکاتی از فروش شدم.&lt;br&gt;
+&lt;br&gt;
+یکی از نکاتی که بهش رسیدم این بود که گاها افراد برای پروموت کرد چیزی که میخوان بفروشن یه جور درگیری ساختگی ایجاد میکنن.&lt;/p&gt;
+&lt;p&gt;برای مثال من بیام بگم ۲ + ۲ = ۵ و این یه چیز قراردادیه حالا پنج نفر بیان بریزن توی پیج اینستای من کلی کامنت بزارن. من به هدف توجه گرفتن رسیدم حالا توی این مدتی کافیه یه چیزی رو پروموت کنم و ایمپرشن اون چیز رو بالا ببرم کما اینکه اگر چیزی دارم میفروشم ممکنه اون همه توجه موجب فروش من بشه.&lt;br&gt;
+&lt;br&gt;
+تمام این ها رو گفتم تا به یه قضیه ای اشاره کنم.&lt;br&gt;
+&lt;br&gt;
+آقای م.م که اسم کاملشو نمیبرم که پروموت نکنمش خودم، چند وقت پیش یه سری حرفای پرت و پلا میگفت و موجب شده بود ما برنامه نویسا اسمشو ببریم و بگیم که مثلا پکیج فروش کلاه برداره. ولی دقیقا وقتی ما اسمشو میبردیم به طور ناخوداگاه داشتیم باعث میشدیم که طرف بیشتر بولد شه. مخصوصا اینکه ایشون توی اینستا فعالیت میکرد و اگر من نوعی میرفتم اونجا کامنتی میذاشتم فرضا با روش هایی که اینستا برای رکامندیشن استفاده میکنه میومد و پیج ایشون رو به افرادی که دنبال کد زدن و برنامه نویسی هستن، رکامند میکرد.&lt;br&gt;
+&lt;br&gt;
+حالا اسم بردن هم که دیگه هیچی وقتی اسم طرفو میبردیم، دو نفری که نمیدونستن ایشون کیه، میرفتن اسمشو سرچ میکردن.&lt;br&gt;
+&lt;br&gt;
+ایشون یه سری سوتی هایی میداد که الان فکر میکنم نمیدونم از قصد بوده که ایمپرشن بگیره و به هدف فروش برسه یا واقعا نمیدونسته. حالا چیزی که مشخصه اینه که طرف به هدف «فروش» رسیده خودآگاه یا ناخودآگاه.&lt;/p&gt;</description></item><item><title>استفاده از v2ray در لینوکس - کلاینت v2ray</title><link>https://blackestwhite.github.io/fa/posts/use-v2ray-under-linux/</link><pubDate>Sat, 17 Dec 2022 01:47:03 +0330</pubDate><guid>https://blackestwhite.github.io/fa/posts/use-v2ray-under-linux/</guid><description>&lt;p&gt;از حدود دو ماه پیش که با کلاینتای مختلف &lt;code&gt;v2ray&lt;/code&gt; سر و کله میزدم. بنظرم زیاد جالب نبودن تصمیم گرفتم کلا به صورت خام از خود core و دستی نوشتن کانفیگا ازش استفاده کنم.&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h2 id="install-v2ray"&gt;نصب v2ray&lt;/h2&gt;
+&lt;p&gt;از لینک زیر v2ray-core رو دانلود کنید&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;https://github.com/v2ray/v2ray-core/releases/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+از حالت زیپ خارج کنیدش&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;unzip v2ray-linux-64.zip -d v2ray-linux-64
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+بعد از خارج کردن از حالت زیپ فایل های مربوطه رو به صورت زیر با دستور &lt;code&gt;mv&lt;/code&gt; جابجا کنید&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;</description></item><item><title>رد کردن اینترنت ملی بوسیله ssh</title><link>https://blackestwhite.github.io/fa/posts/bypass-iri-firewall-ssh/</link><pubDate>Fri, 07 Oct 2022 08:16:29 +0330</pubDate><guid>https://blackestwhite.github.io/fa/posts/bypass-iri-firewall-ssh/</guid><description>&lt;p&gt;به دلیل مسدود بودن اینترنت در ایران، در صورت عدم دسترسی به اینترنت آزاد باید 2 عدد وی پی اس برای پرش از دستگاه با IP ایرانی به هر دستگاه دیگری که IP خارجی دارد (بهتر است اروپایی باشد) آماده کنید.&lt;br&gt;
+&lt;br&gt;
+این قطعه یک پروکسی Socks5 را در شبکه محلی شما باز می کند:&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ssh -C -N -J user@iran user@foreign -D 0.0.0.0:port
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;br&gt;
+کلاینت برای اتصال در تلفن های همراه:&lt;/p&gt;</description></item><item><title>تب و تاب ارز رمزنگاری شده - کریپتوکرنسی</title><link>https://blackestwhite.github.io/fa/posts/crypto-hype/</link><pubDate>Wed, 01 Dec 2021 16:06:46 +0330</pubDate><guid>https://blackestwhite.github.io/fa/posts/crypto-hype/</guid><description>&lt;p&gt;سلام خدمت همه خواننده های این پست&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+قصد دارم توی این نوشته از اتفاقایی که داره میوفته و میبینم(از دید یک توسعه دهنده) بگم تا افراد سودجو شما رو اسیر دست خودشون نکنن&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;img src="https://files.virgool.io/upload/users/2086/posts/zwbwq8b5fgje/lprnbfqhpusu.jpeg" alt="Alt Text" title="title"&gt;&lt;br&gt;
+چارلز پانزی - مطرح کننده طرح پانزی یا همون هرمی&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+پدر من مدیر مدرسه هستش، هفته پیش به دعوت دوستانش به جلسه‌ای دعوت شد که گویا یک توکن/کوین رو معرفی می‌کردند و قول سود n درصدی می‌دادند به خریداران&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+خب اولا هروقت به شما قول سود دادند کمی بیشتر تامل کنید، به گفته دوست پدرم این فرد میگفت فلان کوین رو بخرید، مبلغ سرمایه گذاری اولیه مورد نیاز 100 میلیون تومان هستش، و والت شما نزد ما باشه.. و قول دادند که ماهی 10 درصد سود بدن&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+اولا بهتره ما به دلیل بوجود اومدن سیستم بلاکچین در زمینه ارز و دارایی یک نگاهی بیاندازیم که یکی از اهداف اصلی این بود که شخص من یا شما، مالک واقعی دارایی خودمون باشیم ( توی حساب بانکی مالک ما هستیم ولی حساب نزد بانک هستش، به عبارت دیگه حساب و دارایی امانی هست)&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+دوما کوین-توکنی که بخواهد مشکل واقعی حل کنه، وعده پولدار کردن شمارو نمیده&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+من به این مدل ایراد گرفتم، سپس همکار پدرم مدعی شد این تیم دوماه بهشون سود دادن اما من بهشون گفتم که ممکنه این افراد معامله کرده باشن و از پول شما سود کرده باشند ولی حالت اصلی اینه که این افراد از پول اصلی شما مبلغی به اندازه سود دوماه به خودتان برگردوندن(یعنی پول خودشو به خودش دادن)&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+ایراد به مدل این هستش که توی یک سیستم بسته یک عده سود میکنند و یک عده ضرر، یعنی سرمایه از بیرون وارد نمیشه و فقط کسایی که دعوت به خرید شدند حجم و سرمایه وارد میکنن و بر اساس عرضه و تقاضا وقتی عرضه ثابته و تقاضا بالا به تبع قیمت اون دارایی بالا میره، اما نکته مهم اینه که همه شما منتظرید توی قیمت n بفروشید اونوقت چی؟ متقاضی قیمت بالای n کجاست؟&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+در ضمن وقتی شما والت رو پیش اون افراد دارید یعنی اختیار تام با اوناست و این خوب نیست!&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+اما این تنها دلیل نبود که من این مطلب رو نوشتم چون توی گروه دانشگاه هم مثل اینکه یک فرد به نام ع.ح با فالوور 1.7 میل در اینستاگرام یک کوین/توکنی رو معرفی کرد و قول 1-10 دلار شدنش رو به مردم داد و مشوق من شد که این پست رو بنویسم&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+من رفتم سایت اون پروژه رو چک کردم دیدم از یک قالب اماده استفاده شده،&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+هیچ وایت پیپری ارائه داده نشده (وایت پیپر یک خلاصه ای بر دلیل ایجاد پروژه و مشکلاتی که حل میکنه هستش، به علاوه مختصری از استاندارد هایی که ایجاد کرده یا استفاده میکنه)&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+هیج لینکی توی گیتهاب داده نشده&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+خلاصه بگم مثل یک سیاهچاله اونورش ناپیدا و حالا یک فرد اومده و اینو تبلیغ میکنه..&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;</description></item></channel></rss>
